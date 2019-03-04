@@ -1,24 +1,18 @@
 #!/bin/bash
 
 # Usage copyconfig [configuration file]
-# This script copies a single config file from the repository directory to its destination
-# the install script depends on this file
-
-echo copyconfig is called
 
 ORIGIN=$1
 DESTINATION=$(echo "$ORIGIN" | sed "s#^\./#$HOME/#")
-
-echo "ORIGIN: $ORIGIN"
-echo "DESTINATION: $DESTINATION"
 
 if [ -a "$DESTINATION" ] # if destination exists
 then
 	while true
 	do
-		read -p "Do you want to install $ORIGIN " yn
+		echo "$DESTINATION already exists."
+		read -p "Do you want to overwrite it " yn
 		case $yn in
-			[Yy]* ) echo "cp $ORIGIN $DESTINATION"; break;;
+			[Yy]* ) cp "$ORIGIN" "$DESTINATION"; break;;
 			[Nn]* ) exit;;
 		* ) echo \"Please answer yes or no. \";;
 		esac
