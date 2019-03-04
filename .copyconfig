@@ -2,11 +2,20 @@
 
 # Usage copyconfig [configuration file]
 
+# Declare and initialize variables
 ORIGIN=$1
 DESTINATION=$(echo "$ORIGIN" | sed "s#^\./#$HOME/#")
 
+# Checks if DESTINATION already exists.
 if [ -a "$DESTINATION" ] # if destination exists
 then
+	# Checks if ORIGIN and DESTINATION is identical
+	if diff "$ORIGIN" "$DESTINATION" > /dev/null 
+	then
+		echo "$DESTINATION is identical to $ORIGIN"
+		exit
+	fi
+
 	while true
 	do
 		echo "$DESTINATION already exists."
@@ -18,6 +27,7 @@ then
 		esac
 	done
 else
-
+	echo "Creating $DESTINATION"	
 	cp "$ORIGIN" "$DESTINATION"
 fi
+
