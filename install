@@ -10,5 +10,5 @@ find . 					\
 		! -name README.md 	\
       		! -name install   	\
 		! -path '*.git*'	\
-		! -path '*installfiles*' \
-		-exec installfiles/copyconfig {} \;
+		! -path '*.installfiles*' \
+		-exec .installfiles/copyconfig {} \;

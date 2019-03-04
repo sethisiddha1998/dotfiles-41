@@ -17,4 +17,7 @@ then
 		* ) echo \"Please answer yes or no. \";;
 		esac
 	done
+else
+
+	cp "$ORIGIN" "$DESTINATION"
 fi
