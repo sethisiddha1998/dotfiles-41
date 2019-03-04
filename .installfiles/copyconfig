@@ -19,7 +19,7 @@ then
 	while true
 	do
 		echo "$DESTINATION already exists."
-		read -p "Do you want to overwrite it " yn
+		read -p "Do you want to overwrite it? " yn
 		case $yn in
 			[Yy]* ) cp "$ORIGIN" "$DESTINATION"; break;;
 			[Nn]* ) exit;;
