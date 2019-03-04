@@ -12,3 +12,4 @@ find . 					\
       		! -path *.installfiles*   	\
 		! -path '*.git*'	\
 		-exec ".installfiles/copyconfig" {} \;
+echo "Congratulations you now have my dotfiles!"
