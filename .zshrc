@@ -8,6 +8,7 @@ alias lock=". ~/Scripts/lock.sh"
 alias rem=". ~/Scripts/sshfs"
 alias rcomp="killall compton && compton -b"
 alias compus="git commit && git push"
+alias ls="ls --color=auto"
 
 # Functions
 w3mimg(){w3m -o imgdisplay=/usr/lib/w3m/w3mimgdisplay $1}
