@@ -7,4 +7,15 @@ find . 					\
        		! -name install   	\
 		! -name renaming  	\
 		! -path '*.git*'	\
-		-exec echo {} home/ \;	
+		-exec """		\
+		while true
+		do
+			read -p \"Do you want to install {} \" yn
+			case $yn in
+				[Yy]* ) break;;
+				[Nn]* ) exit;;
+				* ) echo \"Please answer yes or no. \";;
+			esac
+		done
+			 	"""
+
