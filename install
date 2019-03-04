@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Finds all files that are not README.md, install or belongs to the .git directory i.e. configuration files
+find . 					\
+		-type f			\
+		! -name README.md 	\
+       		! -name install   	\
+		! -name renaming  	\
+		! -path '*.git*'	\
+		-exec echo {} home/ \;	
