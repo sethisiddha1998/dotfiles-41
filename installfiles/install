@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Test if user is root
+[ "$USER" == "root" ] && echo "Dont run this as root" && exit
+
+
+# Finds all files that are not README.md, install or belongs to the .git directory i.e. configuration files
+find . 					\
+		-type f			\
+		! -name README.md 	\
+      		! -name install   	\
+		! -path '*.git*'	\
+		! -path '*installfiles*' \
+		-exec installfiles/copyconfig {} \;
