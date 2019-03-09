@@ -1,3 +1,10 @@
+# Restart compton
+exec_always killall compton
+exec_always compton -b
+
+# Start pywal
+exec_always wal -R
+
 # Alt is super
 set $mod Mod1
 
