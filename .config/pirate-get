@@ -19,7 +19,7 @@ enabled = false
 ; specify a custom command for opening the magnet
 ; ex. myprogram --open %s
 ; %s represent the magnet uri
-openCommand = rutorrent %s 
+openCommand = rtorrent %s 
 
 ; open magnets with transmission-remote client
 transmission = false
@@ -33,4 +33,4 @@ colors = true
 
 ; the pirate bay mirror(s) to use:
 ; one or more space separated URLs
-mirror = https://thepiratebay10.org/
+mirror = https://thepiratebay10.org/ https:/tpbproxyone.org tpb.party tpb.tw
