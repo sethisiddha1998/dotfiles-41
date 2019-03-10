@@ -13,7 +13,7 @@ torrents = false
 enabled = false
 
 ; path of the database
-path = ~/.config/tpbdb
+;path = ~/.config/tpbdb
 
 [Misc]
 ; specify a custom command for opening the magnet
