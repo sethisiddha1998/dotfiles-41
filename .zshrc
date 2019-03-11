@@ -24,8 +24,8 @@ clone(){
 }
 
 view(){
-	unoconv $1 /tmp/document.pdf
-	mupdf /tmp/document.pdf
+	libreoffice --headless -convert-to pdf 6225466.docx
+	echo "$1" | sed s/pdf/docx/g | mupdf
 }
 
 # Environment variables
