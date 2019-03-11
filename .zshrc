@@ -9,7 +9,7 @@ alias rem=". ~/Scripts/sshfs"
 alias rcomp="killall compton && compton -b"
 alias compus="git commit && git push"
 alias ls="ls --color=auto"
-alias dock2pdf="libreoffice --headless -convert-to pdf "
+alias docx2pdf="libreoffice --headless -convert-to pdf "
 
 
 # Functions
