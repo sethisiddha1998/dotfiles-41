@@ -5,8 +5,8 @@ exec_always compton -b
 # Start pywal
 exec_always wal -R
 
-# Alt is super
-set $mod Mod1
+# winblow$ is super
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 font pango:monospace 8
@@ -121,3 +121,6 @@ client.urgent           $bg     $bg     $fg  $bg       $bg
 client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
+
+# Audio
+# bindsym F
