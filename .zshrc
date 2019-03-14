@@ -10,6 +10,7 @@ alias rcomp="killall compton && compton -b"
 alias compus="git commit && git push"
 alias ls="ls --color=auto"
 alias docx2pdf="libreoffice --headless -convert-to pdf "
+alias pg="pirate-get -s SizeDsc -p 3" 
 
 
 # Functions
