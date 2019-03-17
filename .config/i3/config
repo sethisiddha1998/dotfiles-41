@@ -1,6 +1,6 @@
 # Restart compton
-exec_always killall compton
-exec_always compton -b
+#exec_always killall compton
+#exec_always compton
 
 # Start pywal
 exec_always wal -R
@@ -101,6 +101,7 @@ bindsym $mod+r exec st ranger
 bindsym $mod+s exec surf -z 1.2 -b duckduckgo.com 
 bindsym $mod+w exec libreoffice
 bindsym $mod+n exec . ~/Scripts/lock 
+bindsym $mod+t exec st tmux -L rt attach -t rt && tmux attach -t rt
 
 # Aesthetics
 default_border pixel 0
@@ -110,8 +111,8 @@ set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color0 #f0f0f0
 
 # Gaps
-#gaps inner 10
-#gaps outer 5
+gaps inner 10
+#gaps outer 15
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $fg  $bg       $bg
