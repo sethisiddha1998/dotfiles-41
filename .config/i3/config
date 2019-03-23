@@ -102,6 +102,7 @@ bindsym $mod+s exec surf -z 1.2 -b duckduckgo.com
 bindsym $mod+w exec libreoffice
 bindsym $mod+n exec . ~/Scripts/lock 
 bindsym $mod+t exec st tmux -L rt attach -t rt && tmux attach -t rt
+bindsym $mod+c exec st cmus
 
 # Aesthetics
 default_border pixel 0

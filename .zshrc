@@ -11,6 +11,7 @@ alias compus="git commit && git push"
 alias ls="ls --color=auto"
 alias docx2pdf="libreoffice --headless -convert-to pdf "
 alias pg="pirate-get -s SizeDsc -p 3" 
+alias gremail='grep -Eh -o "[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}"'
 
 
 # Functions
