@@ -33,4 +33,4 @@ colors = true
 
 ; the pirate bay mirror(s) to use:
 ; one or more space separated URLs
-mirror = https://thepiratebay10.org/ https:/tpbproxyone.org tpb.party tpb.tw
+mirror = tpb.tw
