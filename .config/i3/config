@@ -103,6 +103,7 @@ bindsym $mod+w exec libreoffice
 bindsym $mod+n exec . ~/Scripts/lock 
 bindsym $mod+t exec st tmux -L rt attach -t rt && tmux attach -t rt
 bindsym $mod+c exec st cmus
+bindsym $mod+p exec st pulsemixer
 
 # Aesthetics
 default_border pixel 0
