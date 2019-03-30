@@ -101,7 +101,7 @@ bindsym $mod+r exec st ranger
 bindsym $mod+s exec surf -z 1.2 -b duckduckgo.com 
 bindsym $mod+w exec libreoffice
 bindsym $mod+n exec . ~/Scripts/lock 
-bindsym $mod+t exec st tmux -L rt attach -t rt && tmux attach -t rt
+bindsym $mod+t exec st tremc
 bindsym $mod+c exec st cmus
 bindsym $mod+p exec st pulsemixer
 

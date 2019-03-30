@@ -19,10 +19,10 @@ enabled = false
 ; specify a custom command for opening the magnet
 ; ex. myprogram --open %s
 ; %s represent the magnet uri
-openCommand = rtorrent %s 
+;openCommand = qbittorrent %s 
 
 ; open magnets with transmission-remote client
-transmission = false
+transmission = true
 ; set to username:password if needed
 transmission-auth =
 ; set to the port number if needed
@@ -33,4 +33,4 @@ colors = true
 
 ; the pirate bay mirror(s) to use:
 ; one or more space separated URLs
-mirror = tpb.tw
+mirror = pirateproxy.id
