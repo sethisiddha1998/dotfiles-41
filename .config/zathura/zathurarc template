@@ -1,0 +1,42 @@
+# Disable statusbar
+set guioptions c
+
+# Gruvbox template
+set recolor-reverse-video 	"false"
+set font                        "inconsolata 9"
+set default-bg                  "#282828" #06
+set default-fg                  "#ebdbb2" #01
+
+set statusbar-bg                "#282828" #04
+set statusbar-fg                "#ebdbb2" #02
+
+set inputbar-bg                 "#282828" # currently not used
+set inputbar-fg                 "#ebdbb2" #02
+
+set notification-error-bg       "#282828" #08
+set notification-error-fg       "#ebdbb2" #06
+
+set notification-warning-bg     "#282828" #08
+set notification-warning-fg     "#ebdbb2" #06
+
+#set highlight-color             "#F4BF75" #0A
+#set highlight-active-color      "#AA759F" #08
+
+set highlight-color             "#282828" #0A
+set highlight-active-color      "#ebdbb2" #08
+
+set completion-highlight-bg     "#282828" #0C
+set completion-highlight-fg     "#ebdbb2" #05
+
+set completion-bg               "#282828" #05
+set completion-fg               "#ebdbb2" #0C
+
+set notification-bg             "#282828" #0B
+set notification-fg             "#ebdbb2" #07
+
+set recolor-lightcolor          "#282828" #06
+set recolor-darkcolor           "#ebdbb2" #02
+set recolor                     "true"
+
+# setting recolor-keephue true will keep any color your pdf
+#set recolor-keephue             "true"
