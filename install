@@ -5,6 +5,12 @@
 
 
 # Finds all files that are not README.md, install or belongs to the .git directory i.e. configuration files
+
+# .surf, .surf/styles and .surf/styles/gruvbox-styles directories
+mkdir ~/.surf
+mkdir ~/.surf/styles
+mkdir ~/.surf/styles/gruvbox-styles
+
 find . 					\
 		-type f			\
 		! -name README.md 	\
